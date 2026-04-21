@@ -1,0 +1,11 @@
+name: tdd-azd-ai-3026-smart-home
+metadata:
+  template: tddazd-ai-3026-smart-home@1.0.0
+infra:
+  provider: bicep
+  path: ./infra
+services:
+  web:
+    project: ./src/SmartHome.Web
+    host: appservice
+    language: dotnet
